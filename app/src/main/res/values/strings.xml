@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NDS Food</string>
+    <string name="register_button">Register Now</string>
+    <string name="login_button">Login</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Password confirm</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="full_name">Full name</string>
+    <string name="search_hint">Search</string>
+    <string name="results">Results</string>
+    <string name="choose_destination">Выберите адрес доставки</string>
+    <string name="more">More</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="go_to_cart">Go to cart</string>
+    <string name="continue_shop">Continue Shop</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+    <string name="delivery_description">Delivered between monday aug and thursday 20 from 8up to 91:32 pm.</string>
+    <string name="delivery_info">Delivery info</string>
+    <string name="on_boarding_delivery">Fastest delivery\n 24/7</string>
+    <string name="on_boarding_welcome">Welcome To NDS Food</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="skip_authorization">Skip authorization</string>
+</resources>

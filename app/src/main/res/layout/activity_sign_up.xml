@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_red"
+        android:paddingStart="105dp"
+        android:paddingTop="35dp"
+        android:paddingEnd="105dp"
+        android:paddingBottom="21dp"
+        android:src="@drawable/man_of_nachalo"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/email"
+        android:textColor="@color/black_opacity_40"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="deliver@mail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_password"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/password"
+        android:textColor="@color/black_opacity_40"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="* * * * * * * * "
+        android:inputType="textPassword"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_full_name" />
+
+    <TextView
+        android:id="@+id/text_view_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/password_confirm"
+        android:textColor="@color/black_opacity_40"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password_confirm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="* * * * * * * * "
+        android:inputType="textPassword"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_phone_number" />
+
+    <TextView
+        android:id="@+id/text_view_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/full_name"
+        android:textColor="@color/black_opacity_40"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_full_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="Olivie Berlusco"
+        android:inputType="textPersonName"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/button_background_red"
+        android:onClick="onClickRegister"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/register_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_background_red"
+        android:onClick="onClickCancel"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/cancel_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

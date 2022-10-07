@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launch_screen_backgroud_1"
+    tools:context=".LaunchActivity">
+
+    <ImageView
+        android:id="@+id/logo_circle"
+        android:layout_width="263dp"
+        android:layout_height="263dp"
+        android:src="@drawable/logo_circle"
+        android:scaleType="center"
+        android:paddingTop="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo_pan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_1"
+
+        app:layout_constraintBottom_toBottomOf="@+id/logo_circle"
+        app:layout_constraintEnd_toEndOf="@+id/logo_circle"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/logo_circle"
+        app:layout_constraintTop_toTopOf="@+id/logo_circle"
+        app:layout_constraintVertical_bias="0.15" />
+
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/no_design"
+
+        app:layout_constraintBottom_toBottomOf="@+id/logo_circle"
+        app:layout_constraintEnd_toEndOf="@+id/logo_circle"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/logo_circle"
+        app:layout_constraintTop_toBottomOf="@+id/logo_pan"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/logo_circle"
+        app:layout_constraintEnd_toEndOf="@+id/logo_text"
+        app:layout_constraintStart_toStartOf="@+id/logo_text"
+        app:layout_constraintTop_toBottomOf="@+id/logo_text"
+        app:layout_constraintVertical_bias="0.2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

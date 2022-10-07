@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".OnBoardingFragment2">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/man_of_nachalo_1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/no_design"
+        android:text="@string/on_boarding_welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sign_in"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/no_design"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sign_up"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/no_design"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_skip_authorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/no_color"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/skip_authorization"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
